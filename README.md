@@ -1,2 +1,2 @@
-# bizzareways1
+# bizzareways
 Bizzare lineage
