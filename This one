@@ -831,7 +831,7 @@ local function createUi()
 
 	ui:SetMenuSize(Vector2.new(760, 370))
 	ui:CenterMenu()
-	ui:SetMenuTitle("Bizzare Lineage | rewriting this no joke | alpha")
+	ui:SetMenuTitle("This game sucks")
 	ui:SetWatermarkEnabled(false)
 
 	keepY = movementSection:Toggle("keep Y (use this to void dio)", false, function(enabled)
@@ -968,12 +968,8 @@ local function createUi()
 	settingsSection:Button("Unload", function() state.shouldUnload = true end)
 	_G.__bizzareLineageUnload = function() state.shouldUnload = true end
 
-	infoSection:Button("DONT DM LIKETY FOR HELP")
-	infoSection:Button("FOR ANY HELP REGARDING")
-	infoSection:Button("THE SCRIPT DM: BigJose42")
-
-	ui:Notification("PLEASE: dont dm likety for help with the script", 6)
-	ui:Notification("for help dm me: BigJose42", 6)
+	ui:Notification("Script Loaded", 6)
+	ui:Notification("Config Loaded", 6)
 end
 
 -- i doubt this is useful but ai deemed this as useful
