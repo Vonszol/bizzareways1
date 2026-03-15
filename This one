@@ -1067,7 +1067,9 @@ while not state.shouldUnload do
 	UILib:Step()
 	task.wait() -- removing this will FUCK OVER matcha making it crash 99% of the times
 end
-
+if (shouldunload == true) then
+	ui:Notification("Script Unloaded", 6)
+end
 removeAllItemDrawings()
 setCollectKeyState(false)
 ui:Unload()
