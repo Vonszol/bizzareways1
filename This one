@@ -831,7 +831,7 @@ local function createUi()
 
 	ui:SetMenuSize(Vector2.new(760, 370))
 	ui:CenterMenu()
-	ui:SetMenuTitle("This game sucks")
+	ui:SetMenuTitle("This Game Sucks")
 	ui:SetWatermarkEnabled(false)
 
 	keepY = movementSection:Toggle("keep Y (use this to void dio)", false, function(enabled)
@@ -969,7 +969,7 @@ local function createUi()
 	_G.__bizzareLineageUnload = function() state.shouldUnload = true end
 
 	ui:Notification("Script Loaded", 6)
-	ui:Notification("Config Loaded", 6)
+	ui:Notification("Config loaded", 6)
 end
 
 -- i doubt this is useful but ai deemed this as useful
