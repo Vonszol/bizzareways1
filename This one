@@ -764,8 +764,7 @@ local function renderItemEsp()
 	end
 
 	local boxColor = state.espRainbowBox
-		and Color3.fromHSV((os.clock() * runtime.espRainbowSpeed) % 1, 1, 1)
-		or Color3.fromRGB(255, 255, 255)
+		and Color3.fromRGB(255, 255, 255)
 
 	local cam = workspace.CurrentCamera
 	local camPos = cam and cam.Position or nil
@@ -911,7 +910,6 @@ local function createUi()
 	end)
 
 	espSection:Toggle("Show Box", state.espShowBox, function(v) state.espShowBox = v end)
-	espSection:Toggle("Rainbow Box", state.espRainbowBox, function(v) state.espRainbowBox = v end)
 
 	autoCollectToggle = autoCollectSection:Toggle("Auto Collect", false, function(enabled)
 		state.autoCollect = enabled
