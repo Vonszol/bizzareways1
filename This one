@@ -1,3 +1,4 @@
+
 -- UI LIBRARY AND SUM OTHER BULLSHIIT
 loadstring(game:HttpGet('https://raw.githubusercontent.com/catowice/p/main/library.lua'))()
 
@@ -968,6 +969,9 @@ local function createUi()
 
 	ui:Notification("Script Loaded", 6)
 	ui:Notification("Config loaded", 6)
+	infoSection:Button("Config is very buggy and expeimental")
+	infoSection:Button("Made by Vonszol")
+	infoSection:Button("Why is this game so racist")
 end
 
 -- i doubt this is useful but ai deemed this as useful
