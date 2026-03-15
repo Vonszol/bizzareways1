@@ -131,7 +131,9 @@ if _G.__bizzareLineageUnload then
 	pcall(_G.__bizzareLineageUnload)
 	task.wait(0.05)
 end
-
+if (shouldunload == true) then
+	ui:Notification("Script Unloaded", 6)
+end
 -- self explanatory
 local keybinds = {
 	keepY = nil,
@@ -1066,9 +1068,6 @@ end)
 while not state.shouldUnload do
 	UILib:Step()
 	task.wait() -- removing this will FUCK OVER matcha making it crash 99% of the times
-end
-if (shouldunload == true) then
-	ui:Notification("Script Unloaded", 6)
 end
 removeAllItemDrawings()
 setCollectKeyState(false)
